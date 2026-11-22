@@ -1,0 +1,14 @@
+# Konfigurasi lokal (berbeda di tiap laptop/hosting)
+config/koneksi.php
+
+# File yang diunggah lewat aplikasi
+assets/uploads/*
+!assets/uploads/.htaccess
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Panduan pribadi (tidak ikut repo tim)
+_panduan/
