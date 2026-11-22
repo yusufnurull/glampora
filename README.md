@@ -6,12 +6,12 @@ Proyek UAS Pemrograman Web. Pengunjung bisa melihat kamar, memesan, membayar (si
 
 ## Tim
 
-| Peran | Kode branch | Tanggung jawab |
-|---|---|---|
-| Backend 1 | `be1` | Auth, akun, master data (kamar, kategori, artikel), audit log, statistik, deploy |
-| Backend 2 | `be2` | Ketersediaan kamar, booking, pembayaran dummy, check-in, pembatalan & refund |
-| Frontend 1 | `fe1` | Halaman pengunjung: landing, login/register, reservasi, pembayaran, check-in, artikel, profil |
-| Frontend 2 | `fe2` | Dashboard staff & admin, komponen bersama, grafik |
+| Peran | Nama | NIM | Kode branch | Tanggung jawab |
+|---|---|---|---|---|
+| Backend 1 | Yusuf Nurul Huda | K3524038 | `be1` | Auth, akun, master data (kamar, kategori, artikel), audit log, statistik, deploy |
+| Backend 2 | Muhammad Rafli Rafsanjani | K3524030 | `be2` | Ketersediaan kamar, booking, pembayaran dummy, check-in, pembatalan & refund |
+| Frontend 1 | Atikah Salsabila | K3524008 | `fe1` | Halaman pengunjung: landing, login/register, reservasi, pembayaran, check-in, artikel, profil |
+| Frontend 2 | Nadhira Zulsyifa S | K3524082 | `fe2` | Dashboard staff & admin, komponen bersama, grafik |
 
 ## Setup lokal (XAMPP)
 
