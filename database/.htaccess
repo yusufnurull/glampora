@@ -1,0 +1,4 @@
+# File .sql tidak boleh diunduh dari browser. seed.php tetap bisa dijalankan sekali saat setup.
+<FilesMatch "\.sql$">
+    Require all denied
+</FilesMatch>
