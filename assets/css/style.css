@@ -1,3 +1,7 @@
+/* ============================================================
+   GAYA TAMPILAN — Penanggung jawab: FRONTEND 2
+   Ubah warna di :root agar seluruh halaman ikut berubah.
+   ============================================================ */
 :root {
     --warna-utama: #2f6b4f;        /* hijau hutan */
     --warna-utama-gelap: #224f3a;
@@ -30,38 +34,43 @@ body { background: var(--warna-latar); }
     --bs-btn-active-bg: var(--warna-utama-gelap);
 }
 .text-primary { color: var(--warna-utama) !important; }
-
 .bg-primary { background-color: var(--warna-utama) !important; }
 .nav-link.active { font-weight: 600; }
+
 /* Aksesibilitas: fokus keyboard selalu terlihat */
 :focus-visible { outline: 3px solid var(--warna-aksen); outline-offset: 2px; 
 }
 .skip-link { position: absolute; top: .5rem; left: .5rem; z-index: 2000; 
 background: #fff; padding: .5rem 1rem; }
+
 /* ---------- Halaman user ---------- */
 .hero {
-background: linear-gradient(rgba(20, 35, 28, .55), rgba(20, 35, 28, 
+    background: linear-gradient(rgba(20, 35, 28, .55), rgba(20, 35, 28, 
 .65)), url("../img/hero.svg") center / cover;
-color: #fff;
-padding: 6rem 0 5rem;
+    color: #fff;
+    padding: 6rem 0 5rem;
 }
 .hero .lead { max-width: 36rem; }
+
 .kartu-kamar img, .kartu-artikel img { aspect-ratio: 16 / 10; object-fit: 
 cover; }
 .kartu-kamar, .kartu-artikel { transition: transform .15s, box-shadow .15s; }
-.kartu-kamar:hover, .kartu-artikel:hover { transform: translateY(-3px); box
-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .08); }
+.kartu-kamar:hover, .kartu-artikel:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .08); }
+
 .langkah-nomor {
 width: 2.5rem; height: 2.5rem; border-radius: 50%;
 display: inline-flex; align-items: center; justify-content: center;
 background: var(--warna-utama); color: #fff; font-weight: 700;
 }
+
 .ringkasan-harga { position: sticky; top: 5.5rem; }
+
 .kartu-checkin { border: 2px dashed var(--warna-utama); }
 .kartu-checkin .qr { width: 160px; height: 160px; }
-.kartu-checkin .qr img, .kartu-checkin .qr canvas { width: 100% !important; 
-height: 100% !important; }
+.kartu-checkin .qr img, .kartu-checkin .qr canvas { width: 100% !important; height: 100% !important; }
+
 .isi-artikel { white-space: pre-line; font-size: 1.05rem; line-height: 1.8; }
+
 .footer-situs { background: var(--warna-sidebar); color: #e9ece9; }
 .footer-situs a { color: #e9ece9; text-decoration: none; }
 .footer-situs a:hover { text-decoration: underline; }
@@ -71,10 +80,13 @@ height: 100% !important; }
 /* !important: Bootstrap membuat latar .offcanvas-lg transparan di layar 
 lebar */
 .sidebar { background-color: var(--warna-sidebar) !important; color: #fff; }
-.pagination {--bs-pagination-active-bg: var(--warna-utama);--bs-pagination-active-border-color: var(--warna-utama);--bs-pagination-color: var(--warna-utama);
+.pagination {
+    --bs-pagination-active-bg: var(--warna-utama);
+    --bs-pagination-active-border-color: var(--warna-utama);
+    --bs-pagination-color: var(--warna-utama);
 }
 @media (min-width: 992px) {
-.sidebar { width: 250px; min-height: 100vh; position: sticky; top: 0; 
+    .sidebar { width: 250px; min-height: 100vh; position: sticky; top: 0; 
 height: 100vh; overflow-y: auto; }
 }
 .sidebar .nav-link { color: rgba(255, 255, 255, .75); }
@@ -83,9 +95,10 @@ height: 100vh; overflow-y: auto; }
 .sidebar .nav-link.active { background: var(--warna-utama); color: #fff; }
 .konten-dashboard { min-width: 0; }   /* agar tabel lebar tidak merusak 
 layout */
+
 .kartu-statistik .ikon {
-width: 3rem; height: 3rem; border-radius: .75rem;
-display: flex; align-items: center; justify-content: center; font-size: 
+    width: 3rem; height: 3rem; border-radius: .75rem;
+    display: flex; align-items: center; justify-content: center; font-size: 
 1.4rem;
 }
 .tabel-data td, .tabel-data th { vertical-align: middle; white-space: nowrap; 
@@ -93,10 +106,12 @@ display: flex; align-items: center; justify-content: center; font-size:
 .tabel-data .wrap { white-space: normal; min-width: 14rem; }
 .thumb { width: 64px; height: 44px; object-fit: cover; border-radius: .4rem; 
 }
+
 /* ---------- Cetak kartu check-in ---------- */
 @media print {
-nav, footer, .no-print { display: none !important; }
-body { background: #fff; }
+    nav, footer, .no-print { display: none !important; }
+    body { background: #fff; }
 }
+
 /* Teks panjang (email, alamat) di footer tidak keluar layar HP */
 .footer-situs li { overflow-wrap: anywhere; }
